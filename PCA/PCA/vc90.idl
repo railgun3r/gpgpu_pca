@@ -1,0 +1,11 @@
+import "docobj.idl";
+
+
+[ version(1.0), uuid(e400ea80-f04e-3ab8-9e5f-157dce0f4ee4) ]
+library magma_sfortran
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+}
+

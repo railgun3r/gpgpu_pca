@@ -1,0 +1,125 @@
+﻿Build started 21.06.2014 2:29:38.
+     1>Project "C:\PCA\PCA\PCA.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\AMD\clAmdBlas\include" /I"C:\Program Files (x86)\AMD APP SDK\2.9\include" /I"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /MTd /GS /Gy- /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\PCA.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\AMD\clAmdBlas\include" /I"C:\Program Files (x86)\AMD APP SDK\2.9\include" /I"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" /Zi /nologo /W3 /WX- /Od /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /MTd /GS /Gy- /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\PCA.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt CL_MAGMA_RT.cpp constants.cpp dlarfb_gpu.cpp dlatrd.cpp dormql.cpp dormqr.cpp dormtr.cpp dpanel_to_q.cpp dsyevd.cpp dsytrd.cpp get_nb_tahiti.cpp interface.cpp magmablas_d.cpp magmablas_s.cpp PCA.cpp slaex0.cpp slaex1.cpp slaex3.cpp slarfb_gpu.cpp slatrd.cpp sormql.cpp sormqr.cpp sormtr.cpp spanel_to_q.cpp sstedx.cpp ssyevd.cpp ssytrd.cpp xerbla.cpp
+         xerbla.cpp
+     1>xerbla.cpp(55): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+         ssytrd.cpp
+         ssyevd.cpp
+         sstedx.cpp
+         spanel_to_q.cpp
+         sormtr.cpp
+         sormqr.cpp
+         sormql.cpp
+         slatrd.cpp
+         slarfb_gpu.cpp
+         slaex3.cpp
+         slaex1.cpp
+         slaex0.cpp
+         PCA.cpp
+     1>c:\pca\pca\read_matrix.h(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\pca\pca\read_matrix.h(23): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>PCA.cpp(105): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>PCA.cpp(121): warning C4129: 'W' : unrecognized character escape sequence
+     1>PCA.cpp(136): warning C4101: 'i' : unreferenced local variable
+         magmablas_s.cpp
+         magmablas_d.cpp
+         interface.cpp
+     1>interface.cpp(132): warning C4267: '=' : conversion from 'size_t' to 'magma_int_t', possible loss of data
+         get_nb_tahiti.cpp
+         dsytrd.cpp
+         dsyevd.cpp
+     1>dsyevd.cpp(158): warning C4101: 'dwork' : unreferenced local variable
+         Generating Code...
+         Compiling...
+         dpanel_to_q.cpp
+         dormtr.cpp
+         dormqr.cpp
+         dormql.cpp
+         dlatrd.cpp
+         dlarfb_gpu.cpp
+         constants.cpp
+         CL_MAGMA_RT.cpp
+     1>CL_MAGMA_RT.cpp(412): warning C4101: 'rtr' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PCA\x64\Debug\PCA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib\amd64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64" /LIBPATH:"C:\Program Files (x86)\AMD\clAmdBlas\lib64\import" /LIBPATH:"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\lib\intel64" /LIBPATH:"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\compiler\lib\intel64" /LIBPATH:"C:\Program Files (x86)\AMD APP SDK\2.9\lib\x86_64" mkl_intel_lp64.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib vcomp.lib clAmdBlas.lib OpenCL.lib libiomp5md.lib mkl_intel_lp64.lib mkl_sequential.lib mkl_intel_thread.lib mkl_core.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\PCA\x64\Debug\PCA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PCA\x64\Debug\PCA.lib" /MACHINE:X64 x64\Debug\CL_MAGMA_RT.obj
+         x64\Debug\constants.obj
+         x64\Debug\dlarfb_gpu.obj
+         x64\Debug\dlatrd.obj
+         x64\Debug\dormql.obj
+         x64\Debug\dormqr.obj
+         x64\Debug\dormtr.obj
+         x64\Debug\dpanel_to_q.obj
+         x64\Debug\dsyevd.obj
+         x64\Debug\dsytrd.obj
+         x64\Debug\get_nb_tahiti.obj
+         x64\Debug\interface.obj
+         x64\Debug\magmablas_d.obj
+         x64\Debug\magmablas_s.obj
+         x64\Debug\PCA.obj
+         x64\Debug\slaex0.obj
+         x64\Debug\slaex1.obj
+         x64\Debug\slaex3.obj
+         x64\Debug\slarfb_gpu.obj
+         x64\Debug\slatrd.obj
+         x64\Debug\sormql.obj
+         x64\Debug\sormqr.obj
+         x64\Debug\sormtr.obj
+         x64\Debug\spanel_to_q.obj
+         x64\Debug\sstedx.obj
+         x64\Debug\ssyevd.obj
+         x64\Debug\ssytrd.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\xerbla.obj
+         Microsoft (R) 32b/64b MIDL Compiler Version 8.00.0603 
+         Copyright (c) Microsoft Corporation. All rights reserved.
+         64 bit Processing .\vc120.idl
+         vc120.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+         wtypes.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+         basetsd.h
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+         guiddef.h
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\wincrypt.idl
+         wincrypt.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\prsht.idl
+         prsht.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+         objidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+         unknwn.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl
+         urlmon.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oleidl.idl
+         oleidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\servprov.idl
+         servprov.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\msxml.idl
+         msxml.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+         oaidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\propidl.idl
+         propidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\docobj.idl
+         docobj.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.idl
+         ocidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+         oaidl.acf
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.acf
+         ocidl.acf
+         PCA.vcxproj -> C:\PCA\x64\Debug\PCA.exe
+     1>Done Building Project "C:\PCA\PCA\PCA.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:12.40

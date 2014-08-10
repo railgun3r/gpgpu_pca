@@ -1,0 +1,31 @@
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\wincrypt.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\prsht.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\unknwn.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\oleidl.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\servprov.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\msxml.idl";
+import "c:\program files (x86)\windows kits\8.1\include\um\oaidl.idl";
+import "C:\Program Files (x86)\Windows Kits\8.1\Include\um\propidl.idl";
+import "docobj.idl";
+
+#line 110 "c:\\program files (x86)\\windows kits\\8.1\\include\\shared\\basetsd.h"
+typedef [public] int INT_PTR,  PINT_PTR;
+
+typedef [public] unsigned int UINT_PTR,  PUINT_PTR;
+
+#line 113 "c:\\program files (x86)\\windows kits\\8.1\\include\\shared\\basetsd.h"
+typedef [public] int LONG_PTR,  PLONG_PTR;
+
+typedef [public] unsigned int ULONG_PTR,  PULONG_PTR;
+
+
+[ version(1.0), uuid(e400ea80-f04e-3ab8-9e5f-157dce0f4ee4) ]
+library magma_sfortran
+{
+	importlib("stdole2.tlb");
+
+}
+

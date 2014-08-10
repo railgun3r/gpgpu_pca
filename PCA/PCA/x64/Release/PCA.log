@@ -1,0 +1,93 @@
+﻿Build started 20.06.2014 19:54:21.
+     1>Project "C:\PCA\PCA\PCA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\AMD\clAmdBlas\include" /I"C:\Program Files (x86)\AMD APP SDK\2.9\include" /I"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\PCA.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt PCA.cpp magmablas_d.cpp
+         PCA.cpp
+     1>c:\pca\pca\read_matrix.h(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\pca\pca\read_matrix.h(23): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\stdio.h(304) : see declaration of 'sscanf'
+     1>PCA.cpp(105): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\time.inl(112) : see declaration of 'localtime'
+     1>PCA.cpp(121): warning C4129: 'W' : unrecognized character escape sequence
+     1>PCA.cpp(136): warning C4101: 'i' : unreferenced local variable
+         magmablas_d.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PCA\x64\Release\PCA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib\amd64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x64" /LIBPATH:"C:\Program Files (x86)\AMD\clAmdBlas\lib64\import" /LIBPATH:"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\lib\intel64" /LIBPATH:"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\compiler\lib\intel64" /LIBPATH:"C:\Program Files (x86)\AMD APP SDK\2.9\lib\x86_64" mkl_intel_lp64_dll.lib mkl_intel_thread_dll.lib mkl_core_dll.lib libiomp5md.lib vcomp.lib clAmdBlas.lib OpenCL.lib libiomp5md.lib mkl_intel_lp64.lib mkl_sequential.lib mkl_intel_thread.lib mkl_core.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\PCA\x64\Release\PCA.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PCA\x64\Release\PCA.lib" /MACHINE:X64 x64\Release\CL_MAGMA_RT.obj
+         x64\Release\constants.obj
+         x64\Release\dlarfb_gpu.obj
+         x64\Release\dlatrd.obj
+         x64\Release\dormql.obj
+         x64\Release\dormqr.obj
+         x64\Release\dormtr.obj
+         x64\Release\dpanel_to_q.obj
+         x64\Release\dsyevd.obj
+         x64\Release\dsytrd.obj
+         x64\Release\get_nb_tahiti.obj
+         x64\Release\interface.obj
+         x64\Release\magmablas_d.obj
+         x64\Release\magmablas_s.obj
+         x64\Release\PCA.obj
+         x64\Release\slaex0.obj
+         x64\Release\slaex1.obj
+         x64\Release\slaex3.obj
+         x64\Release\slarfb_gpu.obj
+         x64\Release\slatrd.obj
+         x64\Release\sormql.obj
+         x64\Release\sormqr.obj
+         x64\Release\sormtr.obj
+         x64\Release\spanel_to_q.obj
+         x64\Release\sstedx.obj
+         x64\Release\ssyevd.obj
+         x64\Release\ssytrd.obj
+         x64\Release\stdafx.obj
+         x64\Release\xerbla.obj
+     1>LINK : warning LNK4075: ignoring '/INCREMENTAL' due to '/LTCG' specification
+         Generating code
+         Finished generating code
+         Microsoft (R) 32b/64b MIDL Compiler Version 8.00.0603 
+         Copyright (c) Microsoft Corporation. All rights reserved.
+         64 bit Processing .\vc120.idl
+         vc120.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.idl
+         wtypes.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypesbase.idl
+         wtypesbase.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\basetsd.h
+         basetsd.h
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\shared\guiddef.h
+         guiddef.h
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\wincrypt.idl
+         wincrypt.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\prsht.idl
+         prsht.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\objidl.idl
+         objidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\unknwn.idl
+         unknwn.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\urlmon.idl
+         urlmon.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oleidl.idl
+         oleidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\servprov.idl
+         servprov.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\msxml.idl
+         msxml.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.idl
+         oaidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\propidl.idl
+         propidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\docobj.idl
+         docobj.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.idl
+         ocidl.idl
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\oaidl.acf
+         oaidl.acf
+         64 bit Processing C:\Program Files (x86)\Windows Kits\8.1\Include\um\ocidl.acf
+         ocidl.acf
+         PCA.vcxproj -> C:\PCA\x64\Release\PCA.exe
+     1>Done Building Project "C:\PCA\PCA\PCA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.20

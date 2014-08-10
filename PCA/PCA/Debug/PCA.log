@@ -1,0 +1,41 @@
+﻿Build started 13.05.2014 14:03:56.
+     1>Project "C:\PCA\PCA\PCA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\compiler\include\ia32" /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /I"C:\Program Files (x86)\Windows Kits\8.1\Include\um" /I"C:\Program Files (x86)\AMD\clAmdBlas\include" /I"C:\Program Files (x86)\AMD APP SDK\2.9\include" /I"c:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\PCA.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt PCA.cpp
+         PCA.cpp
+     1>c:\pca\pca\read_matrix.h(14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(211) : see declaration of 'fopen'
+     1>c:\pca\pca\read_matrix.h(23): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\stdio.h(304) : see declaration of 'sscanf'
+     1>c:\pca\pca\pca.cpp(34): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\time.inl(112) : see declaration of 'localtime'
+     1>c:\pca\pca\pca.cpp(77): warning C4129: 'p' : unrecognized character escape sequence
+     1>c:\pca\pca\pca.cpp(55): warning C4101: 'liwork' : unreferenced local variable
+     1>c:\pca\pca\pca.cpp(169): warning C4700: uninitialized local variable 'iwork' used
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PCA\Debug\PCA.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib" /LIBPATH:"C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86" /LIBPATH:"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\mkl\lib\ia32" /LIBPATH:"C:\Program Files (x86)\AMD\clAmdBlas\lib32\import" /LIBPATH:"C:\Program Files (x86)\Intel\Composer XE 2013 SP1\compiler\lib\ia32" /LIBPATH:"C:\Program Files (x86)\AMD APP SDK\2.9\lib\x86" mkl_intel_c.lib mkl_intel_thread.lib mkl_core.lib libiomp5md.lib libm.lib vcomp.lib clAmdBlas.lib OpenCL.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\PCA\Debug\PCA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PCA\Debug\PCA.lib" /MACHINE:X86 /SAFESEH Debug\CL_MAGMA_RT.obj
+         Debug\constants.obj
+         Debug\get_nb_tahiti.obj
+         Debug\interface.obj
+         Debug\magmablas_s.obj
+         Debug\PCA.obj
+         Debug\slaex0.obj
+         Debug\slaex1.obj
+         Debug\slaex3.obj
+         Debug\slarfb_gpu.obj
+         Debug\slatrd.obj
+         Debug\sormql.obj
+         Debug\sormqr.obj
+         Debug\sormtr.obj
+         Debug\spanel_to_q.obj
+         Debug\sstedx.obj
+         Debug\ssyevd.obj
+         Debug\ssytrd.obj
+         Debug\stdafx.obj
+         Debug\xerbla.obj
+         PCA.vcxproj -> C:\PCA\Debug\PCA.exe
+     1>Done Building Project "C:\PCA\PCA\PCA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.83
